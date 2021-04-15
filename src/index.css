@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap");
+
+body {
+  font-family: "RocknRoll One", sans-serif;
+  background: #fffc45;
+  background: -webkit-linear-gradient(top right, #fffc45, #fe5ccb);
+  background: -moz-linear-gradient(top right, #fffc45, #fe5ccb);
+  background: linear-gradient(to bottom left, #fffc45, #fe5ccb);
+  background-attachment: fixed;
+  text-align: center;
+}
+
+button {
+  font-family: inherit;
+  padding: 1rem;
+  margin: 1rem;
+  background: white;
+  box-shadow: 0 0 5px #747474;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
