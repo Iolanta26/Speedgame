@@ -4,11 +4,11 @@ import GameOver from "./Components/GameOver";
 
 import "./App.css";
 
-import StartSound from "./assets/sounds/knossos.mp3";
-import EndSound from "./assets/sounds/GameOver.mp3";
+// import StartSound from "./assets/sounds/knossos.mp3";
+// import EndSound from "./assets/sounds/GameOver.mp3";
 
-let gameStartSound = new Audio(StartSound);
-let GameOverSound = new Audio(EndSound);
+// let gameStartSound = new Audio(StartSound);
+// let GameOverSound = new Audio(EndSound);
 
 const getRndInteger = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -73,12 +73,12 @@ class App extends Component {
   startHandler = () => {
     this.nexCircle();
     this.setState({ gameStart: true });
-    gameStartSound.play();
+    // gameStartSound.play();
   };
 
   endHandler = () => {
-    gameStartSound.pause();
-    GameOverSound.play();
+    // gameStartSound.pause();
+    // GameOverSound.play();
     clearTimeout(this.timer);
     this.setState({ showGameOver: true });
   };
@@ -107,6 +107,13 @@ class App extends Component {
         </button>
         <button onClick={this.endHandler}>Stop</button>
         {this.state.showGameOver && <GameOver score={this.state.score} />}
+        <div className="text">
+          <h3>
+            This game has been made during my React course at Business Collage.
+            Here I practice using class components and adding sounds. The music
+            is off at the moment to not bother the viewers.{" "}
+          </h3>
+        </div>
       </main>
     );
   }
