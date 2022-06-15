@@ -13,6 +13,4 @@ const Circle = (props) => {
   );
 };
 
-/* <div className="circle" style={{ backgroundColor: props.color }}> */
-
 export default Circle;

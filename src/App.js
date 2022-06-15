@@ -109,9 +109,8 @@ class App extends Component {
         {this.state.showGameOver && <GameOver score={this.state.score} />}
         <div className="text">
           <h3>
-            This game has been made during my React course at Business Collage.
-            Here I practice using class components and adding sounds. The music
-            is off at the moment to not bother the viewers.{" "}
+            This game has been made during my first React course at Business
+            Collage. Enjoy playing 😁
           </h3>
         </div>
       </main>
